@@ -530,8 +530,7 @@ img {
     background: var(--main-brand-color);
     border-radius: 4px;
     border: none;
-    min-width: 169px;
-    height: 56px;
+    min-width: 165px;
     padding: 8px 24px;
     cursor: pointer;
     margin: 0 auto;
@@ -773,8 +772,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
-    align-items: center;
+   
     display: block;
 }
 
@@ -787,32 +785,31 @@ img {
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    
     fill: transparent;
     margin-right: 8px;
     transition: background-color var(--transition), border var(--transition),
         fill var(--transition);
 }
 
-.check-icon {
-    .check-custom {
+ 
+.check-custom {
         display: inline-flex;
     }
 
-    .input-check:checked+.check-text span {
+.input-check:checked+.check-text span {
         background-color: var(--menu-active-color);
         border: none;
         border-radius: 2px;
         fill: var(--footer-color);
     }
 
-    .backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal {
         transform: translate(-50%, -50%) scale(0);
     }
 
-    .modal-btn {
+.btn-modal {
         position: absolute;
         display: flex;
         right: 24px;
@@ -829,16 +826,16 @@ img {
         transition: background-color var(--transition), border var(--transition);
     }
 
-    .modal-btn:is(:hover, :focus, :active) {
+.btn-modal:hover, .btn-modal:focus {
         background-color: var(--menu-active-color);
         border: none;
     }
 
-    .modal-close-icon {
+.modal-close-icon {
         transition: fill var(--transition);
     }
 
-    .send-btn {
+.send-btn {
         font-family: inherit;
         font-weight: 500;
         font-size: 16px;
@@ -857,11 +854,10 @@ img {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .send-btn:is(:hover, :focus) {
+.send-btn:is(:hover, :focus) {
         background-color: var(--menu-active-color);
     }
 
-    .modal-btn:is(:hover, :focus, :active) .modal-close-icon {
+.modal-btn:is(:hover, :focus, :active) .modal-close-icon {
         fill: var(--hero-color);
     }
-}
