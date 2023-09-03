@@ -772,7 +772,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-   
+    align-items: center;
     display: block;
 }
 
@@ -786,8 +786,7 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     
-    align-items: center;
-    justify-content: center;
+       justify-content: center;
     fill: transparent;
     margin-right: 8px;
     transition: background-color var(--transition), border var(--transition),
